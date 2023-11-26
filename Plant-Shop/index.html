@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Plant Shop</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<style>
+  body {
+    font-family: 'Athiti', sans-serif;
+  }
+
+  li {
+    background-color: #0dc6ff;
+    color: black;
+  }
+
+  li:hover {
+    background-color: cyan;
+  }
+
+  .img-content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 10px;
+
+  }
+
+  div.card {
+    margin-top: 15px;
+  }
+#Recommend{
+  font-size: small;
+}
+#kaidee{
+  font-size: small;
+}
+#outstock{
+  font-size: small;
+}
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <div class="container">
+      <a class="navbar-brand" href=""><i class="bi bi-tree-fill"></i>Air Purifying Plant Shop</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#" aria-current="page">Home <span
+                class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#" aria-current="page">Store <span
+                class="visually-hidden">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Member</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Category</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#">Bamboo Palm</a>
+              <a class="dropdown-item" href="#">Boston Fern</a>
+              <a class="dropdown-item" href="#">Monstera</a>
+              <a class="dropdown-item" href="#">Selloum Philodendron</a>
+              <a class="dropdown-item" href="#">Dracaena</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class=""
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
+          class=""></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"
+          class="active" aria-current="true"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img src="Images/PROMOTION1.png" class="card-img-top" alt="Image 1">
+          <title>Placeholder</title>
+          <rect width="50%" height="50%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em"></text>
+        </div>
+        <div class="carousel-item">
+          <img src="Images/PLANT2.png" class="card-img-top" alt="Image 1">
+          <title>Placeholder</title>
+          <rect width="50%" height="50%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em"></text>
+        </div>
+        <div class="carousel-item active">
+          <img src="Images/DISCOUNT.png" class="card-img-top" alt="Image 1">
+          <title>Placeholder</title>
+          <rect width="50%" height="50%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em"></text>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container mt-4">
+      <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h2><b><span class="badge bg-danger" id="Recommend">Recommend</span> Bamboo Palm</h2>
+            <img src="Images/bamboo_palm.jpg" class="img-content">
+            <p><br>
+              สร้างอารมณ์พักผ่อนที่ชายหาดในช่วงซัมเมอร์ให้กับบ้านด้วย “ปาล์มไผ่ (Bamboo Palm)” ต้นไม้ฟอกอากาศ
+              ใบเรียวยาวคล้ายต้นมะพร้าว ที่มีความทนทานปลูกง่าย ชอบแสงแดด ต้องการการรดน้ำอย่างสม่ำเสมอ (สัปดาห์ละ 2 - 3
+              ครั้ง) และใส่ปุ๋ยหมักหรือปุ๋ยคอกละลายน้ำเจือจางเดือนละ 1 ครั้ง โดยสามารถวางไว้ในห้องนอนที่ดูสบายๆ
+              เป็นธรรมชาติช่วยให้ห้องมีความมินิมอลมากยิ่งขึ้น</p>
+              <button class="btn btn-success" type="button">หยิบใส่ตะกร้า</button>
+              <button class="btn btn-danger" type="reset">Cancel</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h2><b><span class="badge bg-success" id="kaidee">ขายดี</span>Boston Fern</h2>
+            <img src="Images/boston.jpg" class="img-content">
+            <p><br>
+              คุณสมบัติของ “เฟิร์นบอสตัน (Boston Fern)”
+              ในการดูดสารฟอร์มาลดีไฮด์และเชื้อราซึ่งถือเป็นหนึ่งในมลพิษภายในบ้าน และลักษณะภายนอกที่ดูสวยงามเป็นพุ่มเล็กๆ
+              น่ารักมีชีวิตชีวานี้เอง ที่ทำให้ต้นไม้ฟอกอากาศชนิดนี้กลายเป็นที่นิยมมากขึ้นในประเทศไทย
+              ซึ่งตัวต้นไม้ต้องการการดูแลรดน้ำวันละ 2 ครั้ง เช้า - เย็น และใส่ปุ๋ยหมักหรือปุ๋ยคอกละลายน้ำเจือจางเดือนละ
+              1 ครั้ง</p>
+              <button class="btn btn-success" type="button">หยิบใส่ตะกร้า</button>
+              <button class="btn btn-danger" type="reset">Cancel</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h2><b><span class="badge bg-warning" id="outstock">หมดชั่วคราว</span>Monstera</h2>
+            <img src="Images/montera.jpg" class="img-content">
+            <p><br>
+              “มอนสเตอร่า (Monstera)” ได้รับฉายาว่า ราชินีใบไม้ มีจุดเด่นเป็นใบขนาดใหญ่ โคนใบเว้าลึกเป็นรูปหัวใจแปลกตา
+              แถมยังมีคุณสมบัติในการดูดซับสารพิษอันตรายต่างๆ ในอากาศ มีการดูแลที่ไม่ยาก
+              โดยการวางไว้ในบริเวณที่ไม่ได้รับแสงแดดโดยตรง รดน้ำสัปดาห์ละ 1 ครั้ง
+              หรือมากน้อยตามความชื้นในอากาศเพื่อใบที่เขียวสวยงาม แต่ไม่ควรมีการเคลื่อนย้ายบ่อย
+              มิเช่นนั้นอาจทำให้ต้นมีการเติบโตที่ช้าลงได้</p>
+              <button class="btn btn-secondary" type="button">หมดชั่วคราว</button>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h2><b><span class="badge bg-warning" id="outstock">หมดชั่วคราว</span>Selloum Philodendron</h2>
+            <img src="Images/Stee.jpg" class="img-content">
+            <p><br>   
+เรียกได้ว่าโด่งดังไปทั่วประเทศกับต้นไม้ฟอกอากาศในห้องนอน “ฟิโลเดนดรอน เซลลอม (Selloum Philodendron)” เพราะความเลี้ยงง่ายแสนง่าย อีกทั้งยังสามารถอยู่ได้ทุกสภาพอากาศและทุกพื้นที่ ไม่ว่าจะแสงเยอะหรือน้อยแค่ไหน ก็เติบโตได้ดีไม่แพ้กัน เพียงแค่รดน้ำให้พอชุ่มชื้น ใส่ปุ๋ยหมักหรือปุ๋ยคอกละลายน้ำเจือจางเดือนละ 1 ครั้ง ก็ทนทานมากพอแล้ว</p>
+<button class="btn btn-secondary" type="button">หมดชั่วคราว</button>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h2><b><span class="badge bg-warning" id="outstock">หมดชั่วคราว</span>Monstera</h2>
+            <img src="Images/Dra.jpg" class="img-content">
+            <p><br>
+              “ดราแคนน่า (Dracaena)” หรือ “ต้นวาสนา” ต้นไม้ในห้องนอนอีกหนึ่งสายพันธุ์ที่ช่วยให้อากาศบริสุทธิ์ นอนหลับสบาย ที่ได้รับความนิยมมากในประเทศไทย เป็นได้ทั้งไม้ประดับและ ต้นไม้ฟอกอากาศในห้องนอน ที่ทำให้สุขภาพของผู้อยู่อาศัยดีขึ้น ซึ่งการดูแลก็ง่ายๆ ด้วยการตั้งบริเวณที่มีแดดรำไร รดน้ำเป็นประจำไม่ให้ดินแห้ง แต่ข้อจำกัดของต้นไม้ชนิดนี้คือ ถ้าหากคุณมีสัตว์เลี้ยง ไม่ควรปลูกภายในบ้านเพราะพวกมันเป็นพิษต่อสุนัขและแมวนั่นเอง</p>
+              <div id="liveAlertPlaceholder"></div>
+              <button class="btn btn-secondary" id="liveAlertBtn" type="button">หมดชั่วคราว</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+    <script>
+      const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+const alert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    alert('สินค้าหมดชั่วคราว', 'danger')
+  })
+}
+    </script>
+</body>
+
+</html>
+
+</html>
