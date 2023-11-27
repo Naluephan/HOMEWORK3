@@ -19,6 +19,10 @@
 <style>
   body {
     font-family: 'Athiti', sans-serif;
+    font-weight: bold;
+    display: flex;
+  flex-direction: column;
+
   }
 
   li {
@@ -38,9 +42,18 @@
     border-radius: 10px;
 
   }
+  .card-img-top{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 10px;
+  }
 
-  div.card {
-    margin-top: 15px;
+  .card body {
+    width: 18rem;
+    height: 45rem;
+    text-align: center;
   }
 #Recommend{
   font-size: small;
@@ -51,6 +64,13 @@
 #outstock{
   font-size: small;
 }
+ button{
+  margin-top: auto
+}
+.container {
+  display: flex;
+}
+
 </style>
 
 <body>
@@ -129,18 +149,40 @@
       </button>
     </div>
     <div class="container mt-4">
-      <div class="row">
+      <div class="row row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 g-4">
       <div class="col">
         <div class="card">
           <div class="card-body">
-            <h2><b><span class="badge bg-danger" id="Recommend">Recommend</span> Bamboo Palm</h2>
+            <h3 class="card-title"><span class="badge bg-danger" id="Recommend">Recommend</span> Bamboo Palm</h3>
             <img src="Images/bamboo_palm.jpg" class="img-content">
             <p><br>
               สร้างอารมณ์พักผ่อนที่ชายหาดในช่วงซัมเมอร์ให้กับบ้านด้วย “ปาล์มไผ่ (Bamboo Palm)” ต้นไม้ฟอกอากาศ
               ใบเรียวยาวคล้ายต้นมะพร้าว ที่มีความทนทานปลูกง่าย ชอบแสงแดด ต้องการการรดน้ำอย่างสม่ำเสมอ (สัปดาห์ละ 2 - 3
               ครั้ง) และใส่ปุ๋ยหมักหรือปุ๋ยคอกละลายน้ำเจือจางเดือนละ 1 ครั้ง โดยสามารถวางไว้ในห้องนอนที่ดูสบายๆ
               เป็นธรรมชาติช่วยให้ห้องมีความมินิมอลมากยิ่งขึ้น</p>
-              <button class="btn btn-success" type="button">หยิบใส่ตะกร้า</button>
+              <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">หยิบใส่ตะกร้า</button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">เลือกจำนวน</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="">
+                        <div class="mb-3">
+                            <label for="" class="form-lable">ใส่จำนวน</label>
+                            <input type="number" class="form-control" placeholder="กรุณาใส่จำนวน">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                      <button type="button" class="btn btn-primary">ตกลง</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <button class="btn btn-danger" type="reset">Cancel</button>
           </div>
         </div>
@@ -148,15 +190,37 @@
       <div class="col">
         <div class="card">
           <div class="card-body">
-            <h2><b><span class="badge bg-success" id="kaidee">ขายดี</span>Boston Fern</h2>
+            <h3 class="card-title"><span class="badge bg-success" id="kaidee">ขายดี</span>Boston Fern</h3>
             <img src="Images/boston.jpg" class="img-content">
-            <p><br>
+            <p class="card-text"><br>
               คุณสมบัติของ “เฟิร์นบอสตัน (Boston Fern)”
               ในการดูดสารฟอร์มาลดีไฮด์และเชื้อราซึ่งถือเป็นหนึ่งในมลพิษภายในบ้าน และลักษณะภายนอกที่ดูสวยงามเป็นพุ่มเล็กๆ
               น่ารักมีชีวิตชีวานี้เอง ที่ทำให้ต้นไม้ฟอกอากาศชนิดนี้กลายเป็นที่นิยมมากขึ้นในประเทศไทย
               ซึ่งตัวต้นไม้ต้องการการดูแลรดน้ำวันละ 2 ครั้ง เช้า - เย็น และใส่ปุ๋ยหมักหรือปุ๋ยคอกละลายน้ำเจือจางเดือนละ
               1 ครั้ง</p>
-              <button class="btn btn-success" type="button">หยิบใส่ตะกร้า</button>
+              <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" >หยิบใส่ตะกร้า</button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">เลือกจำนวน</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="">
+                        <div class="mb-3">
+                            <label for="" class="form-lable">ใส่จำนวน</label>
+                            <input type="number" class="form-control" placeholder="กรุณาใส่จำนวน">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                      <button type="button" class="btn btn-primary">ตกลง</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <button class="btn btn-danger" type="reset">Cancel</button>
           </div>
         </div>
@@ -164,42 +228,29 @@
       <div class="col">
         <div class="card">
           <div class="card-body">
-            <h2><b><span class="badge bg-warning" id="outstock">หมดชั่วคราว</span>Monstera</h2>
+            <h3 class="card-title"><span class="badge bg-warning" id="outstock">หมดชั่วคราว</span>Monstera</h3>
             <img src="Images/montera.jpg" class="img-content">
-            <p><br>
+            <p class="card-text"><br>
               “มอนสเตอร่า (Monstera)” ได้รับฉายาว่า ราชินีใบไม้ มีจุดเด่นเป็นใบขนาดใหญ่ โคนใบเว้าลึกเป็นรูปหัวใจแปลกตา
               แถมยังมีคุณสมบัติในการดูดซับสารพิษอันตรายต่างๆ ในอากาศ มีการดูแลที่ไม่ยาก
               โดยการวางไว้ในบริเวณที่ไม่ได้รับแสงแดดโดยตรง รดน้ำสัปดาห์ละ 1 ครั้ง
               หรือมากน้อยตามความชื้นในอากาศเพื่อใบที่เขียวสวยงาม แต่ไม่ควรมีการเคลื่อนย้ายบ่อย
               มิเช่นนั้นอาจทำให้ต้นมีการเติบโตที่ช้าลงได้</p>
-              <button class="btn btn-secondary" type="button">หมดชั่วคราว</button>
+<div id="liveAlertPlaceholdertwo"></div>
 
+              <button class="btn btn-secondary" id="liveAlertBtntwo" type="button">หมดชั่วคราว</button>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card">
           <div class="card-body">
-            <h2><b><span class="badge bg-warning" id="outstock">หมดชั่วคราว</span>Selloum Philodendron</h2>
+            <h3 class="card-title"><span class="badge bg-warning" id="outstock">หมดชั่วคราว</span>Selloum Philodendron</h3>
             <img src="Images/Stee.jpg" class="img-content">
-            <p><br>   
+            <p class="card-text"><br>   
 เรียกได้ว่าโด่งดังไปทั่วประเทศกับต้นไม้ฟอกอากาศในห้องนอน “ฟิโลเดนดรอน เซลลอม (Selloum Philodendron)” เพราะความเลี้ยงง่ายแสนง่าย อีกทั้งยังสามารถอยู่ได้ทุกสภาพอากาศและทุกพื้นที่ ไม่ว่าจะแสงเยอะหรือน้อยแค่ไหน ก็เติบโตได้ดีไม่แพ้กัน เพียงแค่รดน้ำให้พอชุ่มชื้น ใส่ปุ๋ยหมักหรือปุ๋ยคอกละลายน้ำเจือจางเดือนละ 1 ครั้ง ก็ทนทานมากพอแล้ว</p>
-<button class="btn btn-secondary" type="button">หมดชั่วคราว</button>
-
-
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <div class="card-body">
-            <h2><b><span class="badge bg-warning" id="outstock">หมดชั่วคราว</span>Monstera</h2>
-            <img src="Images/Dra.jpg" class="img-content">
-            <p><br>
-              “ดราแคนน่า (Dracaena)” หรือ “ต้นวาสนา” ต้นไม้ในห้องนอนอีกหนึ่งสายพันธุ์ที่ช่วยให้อากาศบริสุทธิ์ นอนหลับสบาย ที่ได้รับความนิยมมากในประเทศไทย เป็นได้ทั้งไม้ประดับและ ต้นไม้ฟอกอากาศในห้องนอน ที่ทำให้สุขภาพของผู้อยู่อาศัยดีขึ้น ซึ่งการดูแลก็ง่ายๆ ด้วยการตั้งบริเวณที่มีแดดรำไร รดน้ำเป็นประจำไม่ให้ดินแห้ง แต่ข้อจำกัดของต้นไม้ชนิดนี้คือ ถ้าหากคุณมีสัตว์เลี้ยง ไม่ควรปลูกภายในบ้านเพราะพวกมันเป็นพิษต่อสุนัขและแมวนั่นเอง</p>
-              <div id="liveAlertPlaceholder"></div>
-              <button class="btn btn-secondary" id="liveAlertBtn" type="button">หมดชั่วคราว</button>
-
+<div id="liveAlertPlaceholder"></div>
+<button class="btn btn-secondary" id="liveAlertBtn" type="button">หมดชั่วคราว</button>
           </div>
         </div>
       </div>
@@ -238,6 +289,7 @@ if (alertTrigger) {
   })
 }
     </script>
+    
 </body>
 
 </html>
